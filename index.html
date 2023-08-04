@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Speed link</title>
+
+		<!-- main css file -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Normalize library -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body dir="rtl">
+		<div class="AppLog">
+			<header class="header">
+				<div class="logo">
+					<img src="images/logo.jpg" alt="Speed Link Logo" />
+					<h1 class="name">Speed Link</h1>
+				</div>
+				<div class="header-content">
+					<a href="#" class="cta-btn">أريد تتبع طلبي</a>
+				</div>
+			</header>
+
+			<section class="hero">
+				<img src="images/eastwood-delivery.png" alt="truck" />
+				<div class="hero-content">
+					<h2>أهلا بكم في موقعنا</h2>
+					<p>شعارنا السرعة والأمانة في الشحن</p>
+					<a href="login.html" class="cta-btn">ابدأ معنا</a>
+				</div>
+			</section>
+
+			<section class="about">
+				<h2>من نحن</h2>
+				<p>
+					نحن فريق متحمس وملتزم يهدف إلى تقديم أفضل الخدمات والمنتجات لعملائنا
+					الكرام. نسعى دومًا لتحقيق أعلى مستويات الجودة والتميز في كل ما نقدمه.
+					فلسفتنا تتمحور حول إرضاء العملاء وتلبية احتياجاتهم بأفضل الطرق
+					الممكنة. نؤمن بأهمية التواصل الجيد والاستماع لتفاصيل متطلبات العملاء
+					لنقدم لهم حلولًا مخصصة وفقًا لاحتياجاتهم الخاصة. نحن نضمن أن عملائنا
+					سيحصلون على تجربة فريدة وراضية معنا. نحن نعتبر كل عملية تجارية فرصة
+					لخدمة المجتمع والمساهمة في نجاح عملائنا. يتكون فريقنا من محترفين
+					مؤهلين ومبدعين يمتلكون خبرة طويلة في مجالاتهم. نحن نعتز بفريقنا ونضمن
+					تقديم أفضل الحلول والخدمات للعملاء بكفاءة ومهنية. نشكركم على دعمكم
+					وثقتكم بنا، ونتطلع إلى خدمتكم والعمل معكم في المستقبل.
+				</p>
+			</section>
+
+			<section class="services">
+				<h2>خدماتنا</h2>
+				<div class="services-container">
+					<div class="service-card">
+						<img src="images/logo.jpg" alt="خدمة 1" />
+						<h3>خدمة 1</h3>
+						<p>
+							نص توضيحي لخدمة 1. يمكنك إضافة المزيد من المعلومات حول هذه الخدمة
+							هنا.
+						</p>
+					</div>
+					<div class="service-card">
+						<img src="images/logo.jpg" alt="خدمة 2" />
+						<h3>خدمة 2</h3>
+						<p>
+							نص توضيحي لخدمة 2. يمكنك إضافة المزيد من المعلومات حول هذه الخدمة
+							هنا.
+						</p>
+					</div>
+					<div class="service-card">
+						<img src="images/logo.jpg" alt="خدمة 3" />
+						<h3>خدمة 3</h3>
+						<p>
+							نص توضيحي لخدمة 3. يمكنك إضافة المزيد من المعلومات حول هذه الخدمة
+							هنا.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="product-tracking">
+				<h2>تتبع الطلبية</h2>
+				<p>أدخل رقم الطلبية لمتابعة حالة شحنتك:</p>
+				<form class="tracking-form">
+					<input type="text" placeholder="رقم الطلبية" />
+					<button type="submit">تتبع</button>
+				</form>
+				<div class="tracking-info">
+					<p>حالة الشحنة: في الطريق إليك</p>
+					<p>التقدير الزمني: 3 أيام</p>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<p>
+					Develped by
+					<a href="#">Abdulrahman Nasr</a>
+					and
+					<a href="#">Baraa Mohamed</a>
+					&copy;
+				</p>
+			</footer>
+		</div>
+
+		<script>
+			function refreshDivContent() {
+				var currentTime = new Date().toLocaleTimeString();
+				var divElement = document.getElementById('AppLog');
+				divElement.innerHTML = currentTime;
+			}
+			setInterval(refreshDivContent, 3000);
+		</script>
+	</body>
+</html>
