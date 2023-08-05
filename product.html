@@ -7,7 +7,7 @@
 
 		<!-- main css file -->
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/product.css" />
 		<!-- Normalize library -->
 		<link
 			rel="stylesheet"
@@ -31,17 +31,38 @@
 					<img src="images/logo.jpg" alt="Speed Link Logo" />
 					<h1 class="name">Speed Link</h1>
 				</div>
+				<div class="header-content">
+					<p>رقم الشحنة</p>
+					<p>المشحون إليه</p>
+					<button class="cta-btn">إيقاف الشحن</button>
+				</div>
 			</header>
 
-			<div class="login-container">
-				<h2>Login</h2>
-				<form class="login-form">
-					<label for="username">Username</label>
-					<input type="text" id="username" name="username" required />
-					<label for="password">Password</label>
-					<input type="password" id="password" name="password" required />
-					<button type="submit">Login</button>
-				</form>
+			<div class="status-list">
+				<div class="status-item active">
+					<div class="status-content">
+						<h3>تم الطلب</h3>
+						<p>تم تقديم طلبك بنجاح.</p>
+					</div>
+				</div>
+				<div class="status-item">
+					<div class="status-content">
+						<h3>قيد التنفيذ</h3>
+						<p>نحن نقوم حاليًا بمعالجة طلبك.</p>
+					</div>
+				</div>
+				<div class="status-item">
+					<div class="status-content">
+						<h3>تم الشحن</h3>
+						<p>تم شحن طلبك وهو في طريقه إليك.</p>
+					</div>
+				</div>
+				<div class="status-item">
+					<div class="status-content">
+						<h3>تم التوصيل</h3>
+						<p>تم توصيل طلبك. استمتع بمشترياتك!</p>
+					</div>
+				</div>
 			</div>
 
 			<footer class="footer">

@@ -5,6 +5,22 @@
 	box-sizing: border-box;
 }
 
+body {
+	background: none;
+	max-height: 100vh;
+}
+
+.container {
+	background: rgb(189, 208, 251);
+	background: linear-gradient(
+		0deg,
+		rgba(189, 208, 251, 1) 0%,
+		rgba(255, 255, 255, 1) 48%,
+		rgb(255, 241, 234) 100%
+	);
+	max-height: 100vh;
+}
+
 /* Style the login form container */
 .login-container {
 	max-width: 400px;
