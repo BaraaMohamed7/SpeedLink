@@ -25,55 +25,31 @@
 		/>
 	</head>
 	<body dir="rtl">
-		<div class="AppLog">
-			<header class="header">
-				<div class="logo">
-					<img src="images/logo.jpg" alt="Speed Link Logo" />
-					<h1 class="name">Speed Link</h1>
-				</div>
-				<div class="header-content">
-					<a href="#" class="cta-btn">أريد تتبع طلبي</a>
-				</div>
-			</header>
-
-			<!-- <section class="hero">
-				<img src="images/eastwood-delivery.png" alt="truck" />
-				<div class="hero-content">
-					<h2>أهلا بكم في موقعنا</h2>
-					<p>شعارنا السرعة والأمانة في الشحن</p>
-					<a href="#" class="cta-btn">ابدأ معنا</a>
-				</div>
-			</section> -->
-
-			<div class="login-container">
-				<h2>Login</h2>
-				<form class="login-form">
-					<label for="username">Username</label>
-					<input type="text" id="username" name="username" required />
-					<label for="password">Password</label>
-					<input type="password" id="password" name="password" required />
-					<button type="submit">Login</button>
-				</form>
+		<header class="header">
+			<div class="logo">
+				<img src="images/logo.jpg" alt="Speed Link Logo" />
+				<h1 class="name">Speed Link</h1>
 			</div>
+		</header>
 
-			<footer class="footer">
-				<p>
-					Develped by
-					<a href="#">Abdulrahman Nasr</a>
-					and
-					<a href="#">Baraa Mohamed</a>
-					&copy;
-				</p>
-			</footer>
+		<div class="login-container">
+			<h2>Login</h2>
+			<form class="login-form">
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username" required />
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required />
+				<button type="submit">Login</button>
+			</form>
 		</div>
 
-		<script>
-			function refreshDivContent() {
-				var currentTime = new Date().toLocaleTimeString();
-				var divElement = document.getElementById('AppLog');
-				divElement.innerHTML = currentTime;
-			}
-			setInterval(refreshDivContent, 3000);
-		</script>
+		<footer class="footer">
+			<p>
+				&copy; Develped by
+				<a href="#">Abdulrahman Nasr</a>
+				and
+				<a href="#">Baraa Mohamed</a>
+			</p>
+		</footer>
 	</body>
 </html>
