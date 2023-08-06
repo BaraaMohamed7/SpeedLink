@@ -1,5 +1,4 @@
-/* Reset some default styles for better consistency */
-* {
+Reset some default styles for better consistency * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -106,4 +105,7 @@ body {
 button.cta-btn {
 	background-color: #e90000;
 	border: none;
+}
+center {
+	padding: 40px 0 0;
 }
