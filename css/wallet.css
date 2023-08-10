@@ -147,3 +147,9 @@ td {
 	border-radius: 4px;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+	.wallet-balance {
+		flex-direction: column;
+	}
+}
