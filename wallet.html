@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Speed link</title>
+
+		<!-- main css file -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/wallet.css" />
+		<!-- Normalize library -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body dir="rtl">
+		<div class="container">
+			<header class="header">
+				<div class="logo">
+					<img src="images/logo.jpg" alt="Speed Link Logo" />
+					<h1 class="name">Speed Link</h1>
+				</div>
+			</header>
+
+			<div class="wallet-container">
+				<div class="wallet-balance">
+					<div class="curved-rectangle">
+						<h2>الرصيد</h2>
+						<p>1000 د.إ</p>
+					</div>
+					<div class="wallet-details">
+						<h2>تفاصيل المحفظة</h2>
+						<div class="wallet-card">
+							<p>
+								<strong>الاسم:</strong>
+								اسم المستخدم
+							</p>
+							<p>
+								<strong>اسم المستخدم:</strong>
+								username123
+							</p>
+							<p>
+								<strong>رمز المحفظة:</strong>
+								ABC123
+							</p>
+							<p>
+								<strong>رصيد المحفظة:</strong>
+								1000 د.إ
+							</p>
+							<p>
+								<strong>آخر عملية:</strong>
+								السحب - 200 د.إ
+							</p>
+							<button class="withdraw-btn" onclick="showWithdrawPopup()">
+								سحب
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="popup">
+				<div class="popup-content">
+					<h3>سحب الأموال</h3>
+					<form action="#" method="post">
+						<input type="hidden" name="name" value="اسم المستخدم" />
+						<input type="hidden" name="username" value="username123" />
+						<input type="hidden" name="walletCode" value="ABC123" />
+						<button type="submit">تأكيد السحب</button>
+						<button class="close-btn" onclick="closeWithdrawPopup()">
+							إغلاق
+						</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="operations-table">
+				<h2>جدول العمليات</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>تاريخ</th>
+							<th>المبلغ</th>
+							<th>الحالة</th>
+							<th>تفاصيل</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>12/08/2023</td>
+							<td>200 د.إ</td>
+							<td>مكتمل</td>
+							<td><button class="details-btn">تفاصيل</button></td>
+						</tr>
+						<!-- Add more rows here as needed -->
+					</tbody>
+				</table>
+			</div>
+
+			<script src="js/script.js"></script>
+
+			<footer class="footer">
+				<p>
+					&copy; Develped by
+					<a href="#">Abdulrahman Nasr</a>
+					and
+					<a href="#">Baraa Mohamed</a>
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

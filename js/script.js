@@ -11,3 +11,13 @@ function selectForm() {
     form2.style.display = "block";
   }
 }
+
+function showWithdrawPopup() {
+  const popup = document.getElementById("popup");
+  popup.style.display = "flex";
+}
+
+function closeWithdrawPopup() {
+  const popup = document.getElementById("popup");
+  popup.style.display = "none";
+}
