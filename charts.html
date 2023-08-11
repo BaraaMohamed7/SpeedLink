@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Speed link</title>
+
+		<!-- main css file -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/charts.css" />
+		<!-- Normalize library -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	</head>
+	<body dir="rtl">
+		<div class="container">
+			<header class="header">
+				<div class="logo">
+					<img src="images/logo.jpg" alt="Speed Link Logo" />
+					<h1 class="name">Speed Link</h1>
+				</div>
+			</header>
+
+			<div class="canvas-container">
+				<canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+				<canvas id="myChart02" style="width: 100%; max-width: 600px"></canvas>
+				<canvas id="myChart03" style="width: 100%; max-width: 600px"></canvas>
+			</div>
+
+			<script>
+				var xValues = ['01', '02', '03', '04', '05', '06', '07', '08'];
+				var yValues = [10, 17, 20, 20, 15, 5, 10, 3];
+				var barColors = [
+					'#b91d47',
+					'#00aba9',
+					'#2b5797',
+					'#e8c3b9',
+					'#1e7145',
+					'#ffaabb',
+					'#aa00ff',
+					'',
+				];
+
+				new Chart('myChart', {
+					type: 'pie',
+					data: {
+						labels: xValues,
+						datasets: [
+							{
+								backgroundColor: barColors,
+								data: yValues,
+							},
+						],
+					},
+					options: {
+						title: {
+							display: true,
+							text: 'World Wide Wine Production 2018',
+						},
+					},
+				});
+			</script>
+			<script>
+				var xValues = ['01', '02', '03', '04', '05', '06', '07', '08'];
+				var yValues = [10, 17, 20, 20, 15, 5, 10, 3];
+				var barColors = [
+					'#b91d47',
+					'#00aba9',
+					'#2b5797',
+					'#e8c3b9',
+					'#1e7145',
+					'#ffaabb',
+					'#aa00ff',
+					'',
+				];
+
+				new Chart('myChart02', {
+					type: 'pie',
+					data: {
+						labels: xValues,
+						datasets: [
+							{
+								backgroundColor: barColors,
+								data: yValues,
+							},
+						],
+					},
+					options: {
+						title: {
+							display: true,
+							text: 'World Wide Wine Production 2018',
+						},
+					},
+				});
+			</script>
+			<script>
+				const xValues03 = [];
+				const yValues03 = [];
+				generateData('x * 2 + 7', 0, 10, 0.5);
+
+				new Chart('myChart03', {
+					type: 'line',
+					data: {
+						labels: xValues03,
+						datasets: [
+							{
+								fill: false,
+								pointRadius: 1,
+								borderColor: 'rgba(255,0,0,0.5)',
+								data: yValues03,
+							},
+						],
+					},
+					options: {
+						legend: { display: false },
+						title: {
+							display: true,
+							text: 'y = x * 2 + 7',
+							fontSize: 16,
+						},
+					},
+				});
+				function generateData(value, i1, i2, step = 1) {
+					for (let x = i1; x <= i2; x += step) {
+						yValues03.push(eval(value));
+						xValues03.push(x);
+					}
+				}
+			</script>
+
+			<footer class="footer">
+				<p>
+					&copy; Develped by
+					<a href="#">Abdulrahman Nasr</a>
+					and
+					<a href="#">Baraa Mohamed</a>
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

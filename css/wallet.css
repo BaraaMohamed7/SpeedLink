@@ -152,4 +152,11 @@ td {
 	.wallet-balance {
 		flex-direction: column;
 	}
+	.wallet-card {
+		grid-template-columns: 1fr;
+		margin-top: 40px;
+	}
+	.operations-table {
+		overflow-x: auto;
+	}
 }
