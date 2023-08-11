@@ -5,3 +5,7 @@
 	gap: 40px;
 	margin: 20px 0;
 }
+
+div p {
+	display: none;
+}
