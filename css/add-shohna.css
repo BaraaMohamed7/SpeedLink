@@ -21,3 +21,26 @@
 .file-input {
 	display: none;
 }
+
+select {
+	width: 100%;
+}
+
+.radio {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form > p {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}

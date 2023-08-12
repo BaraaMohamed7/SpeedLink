@@ -39,20 +39,25 @@
 					<label for="form-select">اختر النموذج:</label>
 					<select id="form-select" onchange="selectForm()">
 						<option value="form1">اختر</option>
-						<option value="form1">شاحن</option>
-						<option value="form2">عميل</option>
+						<option value="form1">اضافة شحنة</option>
+						<option value="form2">رفع ملف</option>
 					</select>
 				</div>
 				<div class="form" id="form1">
 					<h2>نموذج 1</h2>
 					<form>
-						<input type="text" placeholder="الاسم" />
-						<input type="text" placeholder="اسم المستخدم" />
-						<input type="password" placeholder="كلمة المرور" />
-						<input type="tel" placeholder="الرقم" />
-						<input type="text" placeholder="المدينة" />
-						<input type="text" placeholder="المدينة" />
-						<input type="text" placeholder="المدينة" />
+						<input type="text" placeholder="الشاحن" />
+						<input type="text" placeholder=" مدة التوصيل" />
+						<input type="text" placeholder="كلمة المرور" />
+						<input type="tel" placeholder="1 الرقم" />
+						<input type="text" placeholder="الرقم 2" />
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Architecto, porro esse reprehenderit odit corporis nihil, ratione,
+							temporibus asperiores facere pariatur eius dolorem iusto quibusdam
+							exercitationem molestias veritatis recusandae repellat provident.
+						</p>
+						<input type="text" placeholder="السعر" />
 						<select id="governorate">
 							<option value="القاهرة">القاهرة</option>
 							<option value="الجيزة">الجيزة</option>
@@ -82,9 +87,16 @@
 							<option value="الواحات البحرية">الواحات البحرية</option>
 							<option value="مطروح">مطروح</option>
 						</select>
-						<div>
-							<input type="radio" name="type" value="دليفري" />
-							<input type="radio" name="type" value="اشحن لي" />
+						<div class="radio">
+							<label for="type">
+								<p>دليفري</p>
+
+								<input type="radio" name="type" value="دليفري" />
+							</label>
+							<label for="type">
+								<p>اشحن لي</p>
+								<input type="radio" name="type" value="اشحن لي" />
+							</label>
 						</div>
 						<button type="submit">إرسال</button>
 					</form>
