@@ -26,15 +26,19 @@ select {
 	width: 100%;
 }
 
-.radio {
+.checkbox {
 	display: flex;
 	align-items: center;
+	padding: 20px;
 	gap: 20px;
 }
 label {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	width: 200px;
+	text-align: center;
+}
+label span {
+	margin-bottom: 20px;
+	display: inline-block;
 }
 
 form > p {
